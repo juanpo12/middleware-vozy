@@ -1,21 +1,46 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Juan",
-        "email": "juan@example.com",
-        "phone": "1234567890",
-        "account_number": "AC456789",
-        "address": "santa maria 123"
-      },
-      {
-        "id": 2,
-        "name": "Maria",
-        "email": "maria@example.com",
-        "phone": "9876543210",
-        "account_number": "AC987654",
-        "address": "santa maria 456"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": 1,
+      "name": "Juan",
+      "email": "juan@example.com",
+      "phone": "1234567890",
+      "account_number": "AC456789",
+      "address": "santa maria 123"
+    },
+    {
+      "id": 2,
+      "name": "Maria",
+      "email": "maria@example.com",
+      "phone": "9876543210",
+      "account_number": "AC987654",
+      "address": "santa maria 456"
+    }
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "report_damage": "Broken screen",
+      "report_number": "RPT001",
+      "phonenumber": "123456789",
+      "damage_size": "Large",
+      "user_name": "Sin reporte",
+      "damage_location": "Sin reporte",
+      "user_account_number": "Sin reporte",
+      "damage_detail": "Sin reporte",
+      "createdAt": "2024-12-29T18:30:39.059Z"
+    },
+    {
+      "id": 2,
+      "report_damage": "Broken screen",
+      "report_number": "RPT001",
+      "phonenumber": "123456789",
+      "damage_size": "Large",
+      "user_name": "Sin reporte",
+      "damage_location": "Sin reporte",
+      "user_account_number": "AC987654",
+      "damage_detail": "Sin reporte",
+      "createdAt": "2024-12-29T18:31:12.995Z"
+    }
+  ]
+}

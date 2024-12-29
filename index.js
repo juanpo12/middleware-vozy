@@ -86,6 +86,34 @@ app.delete("/users/:id", (req, res) => {
   res.status(204).send();
 });
 
+// reportes
+
+app.post("/reports", (req, res) => {
+  const db = readDatabase();
+  const { report_damage, report_number, phonenumber, damage_size, user_name, damage_location, user_account_number, damage_detail } = req.body;
+  
+
+  const newReport = {
+    id: db.reports?.length ? db.reports[db.reports.length - 1].id + 1 : 1,
+    report_damage : report_damage || "Sin daño",
+    report_number : report_number || "Sin reporte",
+    phonenumber : phonenumber || "Sin reporte",
+    damage_size : damage_size || "Sin daño",
+    user_name : user_name || "Sin reporte",
+    damage_location : damage_location || "Sin reporte",
+    user_account_number : user_account_number || "Sin reporte",
+    damage_detail : damage_detail || "Sin reporte",
+    createdAt: new Date().toISOString(),
+  };
+
+  if (!db.reports) db.reports = [];
+  db.reports.push(newReport);
+  writeDatabase(db);
+
+  res.status(201).json(newReport);
+});
+
+
 // Server
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
