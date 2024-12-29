@@ -1,0 +1,19 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Juan",
+        "email": "juan@example.com",
+        "phone": "1234567890",
+        "account_number": "AC456789"
+      },
+      {
+        "id": 2,
+        "name": "Maria",
+        "email": "maria@example.com",
+        "phone": "9876543210",
+        "account_number": "AC987654"
+      }
+    ]
+  }
+  
