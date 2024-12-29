@@ -35,13 +35,13 @@ app.get("/users/:id", (req, res) => {
   res.status(200).json(user);
 });
 
-app.get("users/account/:account_number", (req, res) => {
+app.get("/users/account/:account_number", (req, res) => {
   const db = readDatabase();
   const accountNumber = req.params.account_number;
   const user = db.users.find((user) => user.account_number === accountNumber);
 
   if (!user) {
-    return res.status(404).json({ error: "User not found" });
+    return res.status(400).json({ message: "No se encontro ningun usuario con ese numero de cuenta" });
   }
 
   res.status(200).json(user);
