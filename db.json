@@ -5,14 +5,16 @@
         "name": "Juan",
         "email": "juan@example.com",
         "phone": "1234567890",
-        "account_number": "AC456789"
+        "account_number": "AC456789",
+        "address": "santa maria 123"
       },
       {
         "id": 2,
         "name": "Maria",
         "email": "maria@example.com",
         "phone": "9876543210",
-        "account_number": "AC987654"
+        "account_number": "AC987654",
+        "address": "santa maria 456"
       }
     ]
   }
